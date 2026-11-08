@@ -110,4 +110,3 @@ A plain static file server looks for a real file at the requested path, so reloa
 
 - No Redux, no React Query/SWR and no UI libraries are used.
 - Client-side protection is a user-experience feature, **not security** (see question 5).
-- The project history on GitHub was also reset into a single commit because the repository had first been initialised in the wrong folder.
