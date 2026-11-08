@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; }
+
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.theme-light { background: #ffffff; color: #1f2328; }
+.theme-dark { background: #16181d; color: #e6e6e6; }
+.theme-dark a { color: #8ab4ff; }
+.theme-dark input, .theme-dark select, .theme-dark button {
+  background: #2a2d35; color: #e6e6e6; border: 1px solid #444;
+}
+
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 8px; padding: 12px 16px; border-bottom: 1px solid #8884;
+}
+.nav-links, .nav-right { display: flex; gap: 12px; align-items: center; }
+.nav-link { text-decoration: none; color: inherit; padding: 4px 8px; border-radius: 6px; }
+.nav-link.active { font-weight: bold; background: #3b82f6; color: #fff; }
+.badge { background: #ef4444; color: #fff; border-radius: 999px; padding: 0 7px; font-size: 0.8em; }
+.username { font-weight: 600; }
+
+.content { flex: 1; padding: 16px; max-width: 1100px; width: 100%; margin: 0 auto; }
+.footer { padding: 12px 16px; border-top: 1px solid #8884; text-align: center; font-size: 0.9em; }
+
+button { cursor: pointer; padding: 6px 10px; border-radius: 6px; border: 1px solid #8888; }
+input, select { padding: 6px 8px; border-radius: 6px; border: 1px solid #8888; }
+
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.card { border: 1px solid #8884; border-radius: 8px; padding: 10px; }
+.card a { text-decoration: none; color: inherit; }
+.card img { width: 100%; height: 140px; object-fit: contain; }
+.card h3 { font-size: 1rem; margin: 6px 0; }
+.category, .muted { opacity: 0.7; font-size: 0.9em; }
+.price { font-weight: bold; }
+
+.detail { display: flex; gap: 24px; flex-wrap: wrap; margin: 16px 0; }
+.detail img { width: 280px; max-width: 100%; object-fit: contain; }
+.detail > div { flex: 1; min-width: 240px; }
+
+.status { padding: 8px 0; }
+.error { color: #dc2626; }
+
+.cart-table { width: 100%; border-collapse: collapse; }
+.cart-table th, .cart-table td { padding: 8px; border-bottom: 1px solid #8884; text-align: left; }
+.qty { display: inline-block; min-width: 28px; text-align: center; }
+.total { font-size: 1.2em; font-weight: bold; }
+
+.login form { display: flex; flex-direction: column; gap: 12px; max-width: 320px; }
+.login label { display: flex; flex-direction: column; gap: 4px; }
